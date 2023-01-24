@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <EditText
+        android:id="@+id/teacher_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Имя"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/teacher_subject"
+        app:layout_constraintVertical_chainStyle="packed"
+        />
+    <EditText
+        android:id="@+id/teacher_subject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Предметная область"
+        app:layout_constraintTop_toBottomOf="@id/teacher_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/teacher_position"
+        />
+    <EditText
+        android:id="@+id/teacher_position"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Позиция в списке"
+        app:layout_constraintTop_toBottomOf="@id/teacher_subject"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
